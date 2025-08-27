@@ -14,3 +14,25 @@ public class Main
 	    System.out.println(rev);
 	}
 } 
+public class Main {
+    public static void main(String[] args) {
+        int n = 50;
+
+        for (int num = 2; num <= n; num++) {
+            boolean h = true;
+
+            // Check divisibility
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    h = false;
+                    break;
+                }
+            }
+
+            if (h) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+}
+
